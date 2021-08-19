@@ -19,6 +19,6 @@ io.on("connection", function (socket) {
     //console.log("new connection");
     game_1.default(io, socket);
 });
-server.listen(5000, function () {
+server.listen(process.env.PORT || 5000, function () {
     console.log("server is listening on port 5000");
 });
